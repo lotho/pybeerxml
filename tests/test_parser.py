@@ -27,8 +27,8 @@ class TestParser:
         assert(len(recipe.yeasts) == 1)
         assert(len(recipe.fermentables) == 2)
 
-        "should habe mashing steps"
-        # TODO
+        "should have mashing steps"
+        assert(len(recipe.mash.steps) == 4)
 
         "should have the correctly calculated properties"
         assert(round(recipe.og, 4) == 1.0338)
