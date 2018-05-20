@@ -52,24 +52,24 @@ class TestParser:
     def test_node_to_object(self):
         "test XML node parsing to Python object"
 
-        node = ElementTree.Element("hop", {
-            "name" : "Simcoe",
-            "alpha" : 13,
-            "amount" : 0.5,
-            "use" : "boil",
-            "time" : 30
-        })
+        node = ElementTree.fromstring("""<hop>
+            <name>Simcoe</name>
+            <alpha>13</alpha>
+            <amount>0.5</amount>
+            <use>boil</use>
+            <time>30</time>
+            </hop>""")
 
         test_hop = Hop()
 
         recipe_parser = Parser()
-        recipe_parser.node_to_object(node, test_hop)
+        recipe_parser.nodes_to_object(node, test_hop)
 
-        assert(test_hop.name, "Simcoe")
-        assert(test_hop.alpha, 13)
-        assert(test_hop.amount, 0.5)
-        assert(test_hop.use, "boil")
-        assert(test_hop.time, 30)
+        assert test_hop.name, "Simcoe"
+        assert test_hop.alpha, 13
+        assert test_hop.amount, 0.5
+        assert test_hop.use, "boil"
+        assert test_hop.time, 30
 
     def test_to_lower(self):
 
