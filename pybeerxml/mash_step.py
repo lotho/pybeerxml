@@ -6,6 +6,10 @@ class MashStep(object):
         self.end_temp = None
         self.step_time = None
         self.decoction_amt = None
+        self.name = None
+        self.version = None
+        self.description = None
+        self.infuse_temp = None
 
         @property
         def waterRatio(self):
