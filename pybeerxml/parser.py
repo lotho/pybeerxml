@@ -5,6 +5,7 @@ from .mash import Mash
 from .mash_step import MashStep
 from .yeast import Yeast
 from .style import Style
+from .water import Water
 from .fermentable import Fermentable
 import sys
 
@@ -88,6 +89,12 @@ class Parser(object):
                                 mash_step = MashStep()
                                 self.nodes_to_object(mash_step_node, mash_step)
                                 mash.steps.append(mash_step)
+
+                elif tag_name == "waters":
+                    for water_node in list(recipeProperty):
+                        water = Water()
+                        self.nodes_to_object(water_node, water)
+                        recipe.waters.append(water)
                 else:
                     self.node_to_object(recipeProperty, recipe)
 

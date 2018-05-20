@@ -20,6 +20,7 @@ class Recipe(object):
         self.hops = []
         self.yeasts = []
         self.fermentables = []
+        self.waters = []
         self.mash = None
 
     @property

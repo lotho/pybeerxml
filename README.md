@@ -46,6 +46,16 @@ for recipe in recipes:
 
     for yeast in recipe.yeasts:
         print(yeast.name)
+
+    for water in recipe.waters:
+        print(water.name)
+
+    # show information for the mash process
+    print(recipe.mash.name)
+
+    # iterate over the mashing steps
+    for mash_step in recipe.mash.steps:
+        print(mash_step.name)
 ```
 
 ## Testing
