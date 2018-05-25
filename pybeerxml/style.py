@@ -2,6 +2,7 @@ class Style(object):
     def __init__(self):
         self.name = None
         self.category = None
+        self.category_number = None
         self.og_min = None
         self.og_max = None
         self.fg_min = None
@@ -15,3 +16,22 @@ class Style(object):
         self.carb_min = None
         self.carb_max = None
         self.notes = None
+        self.version = None
+        self.style_letter = None
+        self.style_guide = None
+        self.type = None
+        self.profile = None
+        self.ingredients = None
+        self.examples = None
+        self.display_og_min = None
+        self.display_og_max = None
+        self.display_fg_min = None
+        self.display_fg_max = None
+        self.display_color_min = None
+        self.display_color_max = None
+        self.og_range = None
+        self.fg_range = None
+        self.ibu_range = None
+        self.carb_range = None
+        self.color_range = None
+        self.abv_range = None

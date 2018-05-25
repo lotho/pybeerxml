@@ -15,6 +15,37 @@ class Recipe(object):
         self.carbonation_temp = None
         self.age = None
         self.age_temp = None
+        self.version = None
+        self.type = None
+        self.equipment = None
+        self.asst_brewer = None
+        self.boil_size = None
+        self.notes = None
+        self.taste_notes = None
+        self.taste_rating = None
+        self.fermentation_stages = None
+        self.date = None
+        self.forced_carbonation = None
+        self.priming_sugar_name = None
+        self.priming_sugar_equiv = None
+        self.keg_priming_factor = None
+        self.est_og = None
+        self.est_fg = None
+        self.est_color = None
+        self.ibu_method = None
+        self.est_abv = None
+        self.actual_efficiency = None
+        self.calories = None
+        self.display_og = None
+        self.display_fg = None
+        self.display_batch_size = None
+        self.display_boil_size = None
+        self.display_primary_temp = None
+        self.display_secondary_temp = None
+        self.display_tertiary_temp = None
+        self.display_age_temp = None
+        self.display_carb_temp = None
+        self.carbonation_used = None
 
         self.style = None
         self.hops = []
@@ -22,6 +53,9 @@ class Recipe(object):
         self.fermentables = []
         self.waters = []
         self.mash = None
+        self.equipment = None
+        self.miscs = []
+
 
     @property
     def abv(self):

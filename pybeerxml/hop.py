@@ -10,6 +10,20 @@ class Hop(object):
         self.form = None
         self.notes = None
         self.time = None
+        self.version = None
+        self.type = None
+        self.beta = None
+        self.hsi = None
+        self.origin = None
+        self.substitues = None
+        self.humulene = None
+        self.caryophyllene = None
+        self.cohumulone = None
+        self.myrcene = None
+        self.display_amount = None
+        self.display_time = None
+        self.inventory = None
+
 
     def utilization_factor(self):
         "Account for better utilization from pellets vs. whole"

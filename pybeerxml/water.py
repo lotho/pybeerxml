@@ -11,5 +11,6 @@ class Water(object):
         self.magnesium = None
         self.ph = None
         self.notes = None
+        self.display_amount = None
 
         self.steps = []
