@@ -50,12 +50,20 @@ for recipe in recipes:
     for water in recipe.waters:
         print(water.name)
 
+    for misc in recipe.miscs:
+        print(misc.name)
+
     # show information for the mash process
     print(recipe.mash.name)
 
     # iterate over the mashing steps
     for mash_step in recipe.mash.steps:
         print(mash_step.name)
+
+    # show equipment information
+    print(recipe.equipment.name)
+
+
 ```
 
 ## Testing
